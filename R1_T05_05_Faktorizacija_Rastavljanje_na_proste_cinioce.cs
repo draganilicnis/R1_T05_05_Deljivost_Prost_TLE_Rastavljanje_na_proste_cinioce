@@ -1,20 +1,18 @@
 using System;
-using System.Diagnostics;
+// using System.Diagnostics;
 using System.Collections.Generic;
-using System.Linq;
+// using System.Linq;
 class R1_T05_05_Faktorizacija_Rastavljanje_na_proste_cinioce
 {
     static void Main()
     {
-        // ulong n = 900;
         ulong n = ulong.Parse(Console.ReadLine()); // Faktorizacija_Prosti_cinioci_Write_000(n);
-
+        // ulong n = 900;
         // Stopwatch t = new Stopwatch();
         // n = 1000 * 1000 * 1000 + 7;          // n = 10^9 + 7
         // n = 1111111111111111111;                // n > 10^19
         // t.Start(); Faktorizacija_Prosti_cinioci_Write_000(n); t.Stop(); Console.WriteLine(t.Elapsed); t.Reset();    // oko 8 sec
         // t.Start(); Faktorizacija_Prosti_cinioci_Write_001(n); t.Stop(); Console.WriteLine(t.Elapsed); t.Reset();    // oko 9 sec
-
         // t.Start();
         List<ulong> Cinioci_prosti = Faktorizacija_Prosti_cinioci_Lista(n);
         for (int i = 0; i < Cinioci_prosti.Count; i++) Console.Write(Cinioci_prosti[i] + " ");                      // oko 7 sec
@@ -68,4 +66,8 @@ class R1_T05_05_Faktorizacija_Rastavljanje_na_proste_cinioce
 // R1_T05_05_Faktorizacija_Zadatak_Rastavljanje_na_proste_cinioce: https://petlja.org/sr-Latn-RS/kurs/17862/23/2756
 // https://petlja.org/sr-Latn-RS/biblioteka/r/problemi/Zbirka-stara/rastavljanje_na_proste_cinioce
 // https://petlja.org/sr-Latn-RS/biblioteka/r/Zbirka3/rastavljanje_na_proste_cinioce
+// https://petlja.org/sr-Latn-RS/biblioteka/r/Zbirka2/rastavljanje_na_proste_cinioce
+// https://github.com/draganilicnis/R1_T05_05_Deljivost_Prost_TLE_Rastavljanje_na_proste_cinioce
 // https://arena.petlja.org/sr-Latn-RS/competition/r1-03-petlje-04-deljivost#tab_91514
+// https://arena.petlja.org/sr-Latn-RS/competition/r2-t01-slozenost-t02-02-zamena-iteracije-dom#tab_132321
+// https://arena.petlja.org/sr-Latn-RS/competition/r1-t05-05-prost-broj#tab_132321
